@@ -3,7 +3,7 @@ import React from 'react'
 export default function About() {
   return (
     <section id="about" className="py-12">
-      <h2 className="text-2xl font-semibold">About</h2>
+      <h2 className="text-2xl font-semibold">Biografi</h2>
       <p className="mt-4 text-gray-700">Brief biography of Japirin Sahadi. Replace this placeholder with education, experience, community work, and other background that highlights qualifications.</p>
 
       <div className="mt-6 grid md:grid-cols-2 gap-6">

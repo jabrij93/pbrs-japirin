@@ -9,7 +9,7 @@ const items = [
 export default function Achievements() {
   return (
     <section id="achievements" className="py-12">
-      <h2 className="text-2xl font-semibold">Achievements</h2>
+      <h2 className="text-2xl font-semibold">Pencapaian</h2>
       <div className="mt-6 grid md:grid-cols-3 gap-4">
         {items.map((it) => (
           <div key={it.title} className="p-4 border rounded-lg">
