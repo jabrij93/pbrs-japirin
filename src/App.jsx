@@ -21,7 +21,7 @@ export default function App() {
         </Routes>
       </main>
       <footer className="border-t mt-12 py-6 text-center text-sm text-gray-600">
-        © {new Date().getFullYear()} Japirin Sahadi — BN DUN Kundasang
+        © {new Date().getFullYear()} Japirin Sahadi — N.36 Kundasang
       </footer>
     </div>
   )

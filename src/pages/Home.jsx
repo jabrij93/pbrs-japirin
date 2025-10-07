@@ -34,7 +34,7 @@ export default function Home() {
             </div>
             <div>
               <div className="text-xs text-gray-500">Tempat Pilihan Raya</div>
-              <div className="font-semibold">DUN Kundasang</div>
+              <div className="font-semibold">N.36 Kundasang</div>
             </div>
           </div>
         </div>
