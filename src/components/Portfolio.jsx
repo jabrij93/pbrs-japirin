@@ -5,13 +5,13 @@ export default function Portfolio() {
     {
       title: 'The services provide for design',
       category: 'Photoshop',
-      image: '/portfolio/portfolio-06.jpg',
+      image: '/portfolio/portfolio-02.jpg',
       likes: 650,
     },
     {
       title: 'Mobile app landing design & Services',
       category: 'Figma',
-      image: '/portfolio/portfolio-05.jpg',
+      image: '/portfolio/portfolio-03.jpg',
       likes: 650,
     },
     {
@@ -23,7 +23,7 @@ export default function Portfolio() {
     {
       title: 'PHP with app landing design & Services',
       category: 'Figma',
-      image: '/portfolio/portfolio-03.jpg',
+      image: '/portfolio/portfolio-05.jpg',
       likes: 650,
     },
   ]
