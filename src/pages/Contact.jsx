@@ -31,7 +31,7 @@ export default function Contact() {
           netlify
           className="p-4 border rounded-lg"
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="contact" value="contact" />
 
           <label className="block text-sm">Nama</label>
           <input name="nama" className="mt-1 w-full border rounded px-3 py-2" required />
