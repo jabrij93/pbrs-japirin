@@ -10,7 +10,7 @@ export default function Portfolio() {
     },
     {
       title: 'Menghantar bantuan kepada yang memerlukan',
-      category: 'Ulu sugut',
+      category: 'Ulu Sugut',
       image: 'portfolio-03.jpg',
       likes: 650,
     },
@@ -55,12 +55,15 @@ export default function Portfolio() {
               data-aos-once="true"
             >
               <div className="relative">
-                <img src={item.image} alt={item.title} className="w-full h-52 object-cover" />
+                <img
+                  src={`${import.meta.env.BASE_URL}${item.image}`}
+                  alt={item.title}
+                  className="w-full h-52 object-cover"
+                />
               </div>
               <div className="p-4">
                 <div className="flex justify-between items-center text-sm text-gray-500">
                   <span>{item.category}</span>
-                  {/* <span>❤️ {item.likes}</span> */}
                 </div>
                 <h4 className="mt-2 font-semibold text-gray-900">{item.title}</h4>
               </div>
