@@ -14,13 +14,13 @@ export default function Home() {
 
           <div className="mt-6 flex gap-4">
             <Link
-              to="/contact"
+              to="/hubungi"
               className="inline-block px-6 py-3 bg-bn-blue text-white rounded-md font-medium"
             >
               Sertai Kempen
             </Link>
             <Link
-              to="/about"
+              to="/profil"
               className="inline-block px-6 py-3 border border-gray-300 rounded-md"
             >
               Ketahui lebih lanjut

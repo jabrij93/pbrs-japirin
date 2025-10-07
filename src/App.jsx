@@ -14,10 +14,10 @@ export default function App() {
       <main className="max-w-5xl mx-auto px-6 py-12">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/achievements" element={<Achievements />} />
-          <Route path="/vision" element={<Vision />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/profil" element={<About />} />
+          <Route path="/pencapaian" element={<Achievements />} />
+          <Route path="/visi" element={<Vision />} />
+          <Route path="/hubungi" element={<Contact />} />
         </Routes>
       </main>
       <footer className="border-t mt-12 py-6 text-center text-sm text-gray-600">

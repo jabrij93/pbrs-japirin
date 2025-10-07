@@ -14,10 +14,10 @@ export default function Navbar() {
         </div>
         <nav className="flex items-center gap-6 text-sm">
           <Link to="/" className="hover:text-bn-blue">Laman Utama</Link>
-          <Link to="/about" className="hover:text-bn-blue">Profil</Link>
-          <Link to="/achievements" className="hover:text-bn-blue">Pencapaian</Link>
-          <Link to="/vision" className="hover:text-bn-blue">Visi & Misi</Link>
-          <Link to="/contact" className="px-4 py-2 bg-bn-blue text-white rounded-md">Hubungi</Link>
+          <Link to="/profil" className="hover:text-bn-blue">Profil</Link>
+          <Link to="/pencapaian" className="hover:text-bn-blue">Pencapaian</Link>
+          <Link to="/visi" className="hover:text-bn-blue">Visi & Misi</Link>
+          <Link to="/hubungi" className="px-4 py-2 bg-bn-blue text-white rounded-md">Hubungi</Link>
         </nav>
       </div>
     </header>
