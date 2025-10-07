@@ -28,18 +28,32 @@ export default function Contact() {
         <form
           name="contact"
           method="POST"
-          netlify
+          data-netlify="true"
           className="p-4 border rounded-lg"
         >
-          <input type="hidden" name="contact" value="contact" />
+          {/* Hidden fields for Netlify handling */}
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="subject" value="New message from website" />
+          <input type="hidden" name="redirect" value="/" />
 
           <label className="block text-sm">Nama</label>
-          <input name="nama" className="mt-1 w-full border rounded px-3 py-2" required />
+          <input
+            name="nama"
+            className="mt-1 w-full border rounded px-3 py-2"
+            required
+          />
 
           <label className="block text-sm mt-4">Mesej</label>
-          <textarea name="mesej" className="mt-1 w-full border rounded px-3 py-2 h-24" required />
+          <textarea
+            name="mesej"
+            className="mt-1 w-full border rounded px-3 py-2 h-24"
+            required
+          />
 
-          <button type="submit" className="mt-4 px-4 py-2 bg-bn-blue text-white rounded">
+          <button
+            type="submit"
+            className="mt-4 px-4 py-2 bg-bn-blue text-white rounded"
+          >
             Hantar
           </button>
         </form>
