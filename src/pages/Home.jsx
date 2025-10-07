@@ -9,7 +9,7 @@ export default function Home() {
         <div>
           <h1 className="text-4xl font-extrabold text-gray-900 leading-tight">Japirin Sahadi</h1>
           <p className="mt-4 text-lg text-gray-700">
-            For a stronger Kundasang — Experienced, Committed, and Ready to Serve.
+            Untuk Kundasang yang lebih baik - Berpengalaman, Komited dan Sedia untuk berkhidmat.
           </p>
 
           <div className="mt-6 flex gap-4">
@@ -17,23 +17,23 @@ export default function Home() {
               to="/contact"
               className="inline-block px-6 py-3 bg-bn-blue text-white rounded-md font-medium"
             >
-              Join the Campaign
+              Sertai Kempen
             </Link>
             <Link
               to="/about"
               className="inline-block px-6 py-3 border border-gray-300 rounded-md"
             >
-              Learn More
+              Ketahui lebih lanjut
             </Link>
           </div>
 
           <div className="mt-8 flex items-center gap-6 text-sm text-gray-600">
             <div>
-              <div className="text-xs text-gray-500">Party</div>
+              <div className="text-xs text-gray-500">Parti</div>
               <div className="font-semibold">Barisan Nasional</div>
             </div>
             <div>
-              <div className="text-xs text-gray-500">Constituency</div>
+              <div className="text-xs text-gray-500">Tempat Pilihan Raya</div>
               <div className="font-semibold">DUN Kundasang</div>
             </div>
           </div>
