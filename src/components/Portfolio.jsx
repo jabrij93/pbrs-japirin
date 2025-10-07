@@ -3,27 +3,27 @@ import React from 'react'
 export default function Portfolio() {
   const portfolioItems = [
     {
-      title: 'The services provide for design',
-      category: 'Photoshop',
-      image: '/portfolio/portfolio-02.jpg',
+      title: 'Membangun komuniti setempat',
+      category: 'Kundasang',
+      image: 'portfolio-02.jpg',
       likes: 650,
     },
     {
-      title: 'Mobile app landing design & Services',
-      category: 'Figma',
-      image: '/portfolio/portfolio-03.jpg',
+      title: 'Menghantar bantuan kepada yang memerlukan',
+      category: 'Ulu sugut',
+      image: 'portfolio-03.jpg',
       likes: 650,
     },
     {
-      title: 'Web app Responsive design & Services',
-      category: 'Laravel',
-      image: '/portfolio/portfolio-04.jpg',
+      title: 'Membangun ekonomi tempatan',
+      category: 'Ranau',
+      image: 'portfolio-04.jpg',
       likes: 650,
     },
     {
-      title: 'PHP with app landing design & Services',
-      category: 'Figma',
-      image: '/portfolio/portfolio-05.jpg',
+      title: 'Meningkatkan infrastruktur kampung',
+      category: 'Kg. Timbua',
+      image: 'portfolio-05.jpg',
       likes: 650,
     },
   ]
@@ -39,9 +39,9 @@ export default function Portfolio() {
           data-aos-once="true"
         >
           <span className="text-bn-blue uppercase text-sm font-semibold tracking-wider">
-            Visit my portfolio and keep your feedback
+            Lihat portfolio dan tinggalkan maklum balas anda
           </span>
-          <h2 className="text-3xl font-bold text-gray-900 mt-2">My Portfolio</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mt-2">Sumbangan</h2>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
