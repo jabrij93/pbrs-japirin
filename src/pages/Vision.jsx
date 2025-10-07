@@ -8,7 +8,7 @@ export default function Vision() {
 
       <ul className="mt-4 grid md:grid-cols-3 gap-4">
         <li className="p-4 border rounded">Membaik pulih dan meningkatkan kemudahan dan infrastruktur setempat</li>
-        <li className="p-4 border rounded">Mencipta lebih banyak peluang pekerjaan dan menyokong pembangunan perniagaan setempat</li>
+        <li className="p-4 border rounded">Mencipta lebih banyak peluang pekerjaan dan menyokong pembangunan perniagaan kecil</li>
         <li className="p-4 border rounded">Menyokong pembangunan dan pendidikan belia</li>
       </ul>
     </section>
