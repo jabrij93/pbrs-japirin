@@ -42,7 +42,7 @@ export default function Home() {
         <div className="flex justify-center md:justify-end">
           <div className="w-72 h-72 rounded-xl overflow-hidden shadow-lg">
             <img
-              src="/portrait.jpg"
+              src="/japirin_profil.jpeg"
               alt="Candidate portrait"
               className="w-full h-full object-cover"
             />
