@@ -9,7 +9,7 @@ export default function Navbar() {
           <div className="w-10 h-10 rounded-full bg-bn-blue flex items-center justify-center text-white font-bold">BN</div>
           <div>
             <div className="font-semibold">Japirin Sahadi</div>
-            <div className="text-xs text-gray-500">BN — DUN Kundasang</div>
+            <div className="text-xs text-gray-500">N.36 Kundasang</div>
           </div>
         </div>
         <nav className="flex items-center gap-6 text-sm">

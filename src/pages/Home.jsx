@@ -30,7 +30,7 @@ export default function Home() {
           <div className="mt-8 flex items-center gap-6 text-sm text-gray-600">
             <div>
               <div className="text-xs text-gray-500">Parti</div>
-              <div className="font-semibold">Barisan Nasional</div>
+              <div className="font-semibold">PBRS - Barisan Nasional</div>
             </div>
             <div>
               <div className="text-xs text-gray-500">Tempat Pilihan Raya</div>
