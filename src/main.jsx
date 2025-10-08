@@ -9,7 +9,7 @@ AOS.init()
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/pbrs-japirin/">
+    <BrowserRouter basename="/pbrs-japirin">
       <App />
     </BrowserRouter>
   </React.StrictMode>
