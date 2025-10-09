@@ -24,7 +24,7 @@ export default function About() {
             <li>Ketua Pemuda UPKO Bahagian Ranau, United Progressive Kinabalu Organisation, 2003-2008</li>
           </ul>
 
-          <h4 className="font-semibold mt-2">Penglibatan dalam NGO:</h4>
+          <h4 className="font-semibold mt-2">Penglibatan dalam NGO</h4>
           <ul className="mt-2 text-sm text-gray-700 list-disc list-inside space-y-1 text-justify">
             <li>Naib Presiden, United Sabah Dusun Association (USDA)</li>
             <li>Presiden, Kundasang Highland Four Wheel Drive Club (KHFWDC), 2020-sekarang</li>
