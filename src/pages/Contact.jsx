@@ -3,6 +3,12 @@ import React, { useState } from 'react'
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
 
+  const handleSubmit = (e) => {
+    // Let the browser handle the actual submission to Formspree
+    // but delay the "thank you" message slightly to prevent interrupting submission
+    setTimeout(() => setSubmitted(true), 500)
+  }
+
   return (
     <section id="contact" className="py-12">
       <h2 className="text-2xl font-semibold">Hubungi</h2>
@@ -49,7 +55,7 @@ export default function Contact() {
           <form
             action="https://formspree.io/f/mgvnnwbz"
             method="POST"
-            onSubmit={() => setSubmitted(true)}
+            onSubmit={handleSubmit}
             className="p-4 border rounded-lg relative"
           >
             <label className="block text-sm">Nama</label>
