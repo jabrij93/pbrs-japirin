@@ -3,30 +3,13 @@ import React, { useState } from 'react'
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-
-    const form = e.target
-    const formData = new FormData(form)
-
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => {
-        setSubmitted(true)
-        form.reset()
-      })
-      .catch((error) => alert(error))
-  }
-
   return (
     <section id="contact" className="py-12">
       <h2 className="text-2xl font-semibold">Hubungi</h2>
       <p className="mt-2 text-gray-700">Hubungi atau sebarang pertanyaan</p>
 
       <div className="mt-6 grid md:grid-cols-2 gap-6">
+        {/* Contact Info */}
         <div>
           <div className="font-semibold">Tempat Kempen</div>
           <div className="mt-2 text-sm text-gray-700">
@@ -61,54 +44,47 @@ export default function Contact() {
           </div>
         </div>
 
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          onSubmit={handleSubmit}
-          className="p-4 border rounded-lg relative"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <input type="hidden" name="subject" value="New message from website" />
+        {/* Formspree Form */}
+        {!submitted ? (
+          <form
+            action="https://formspree.io/f/mgvnnwbz"
+            method="POST"
+            onSubmit={() => setSubmitted(true)}
+            className="p-4 border rounded-lg relative"
+          >
+            <label className="block text-sm">Nama</label>
+            <input
+              name="nama"
+              className="mt-1 w-full border rounded px-3 py-2"
+              required
+            />
 
-          {!submitted ? (
-            <>
-              <label className="block text-sm">Nama</label>
-              <input
-                name="nama"
-                className="mt-1 w-full border rounded px-3 py-2"
-                required
-              />
+            <label className="block text-sm mt-4">Mesej</label>
+            <textarea
+              name="mesej"
+              className="mt-1 w-full border rounded px-3 py-2 h-24"
+              required
+            />
 
-              <label className="block text-sm mt-4">Mesej</label>
-              <textarea
-                name="mesej"
-                className="mt-1 w-full border rounded px-3 py-2 h-24"
-                required
-              />
-
-              <button
-                type="submit"
-                className="mt-4 px-4 py-2 bg-bn-blue text-white rounded"
-              >
-                Hantar
-              </button>
-            </>
-          ) : (
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/90 rounded-lg">
-              <h3 className="text-lg font-semibold text-bn-blue">
-                Terima kasih!
-              </h3>
-              <p className="text-gray-700 mt-1">Mesej anda telah dihantar.</p>
-              <button
-                onClick={() => setSubmitted(false)}
-                className="mt-4 px-4 py-2 text-sm bg-bn-blue text-white rounded"
-              >
-                Hantar lagi
-              </button>
-            </div>
-          )}
-        </form>
+            <button
+              type="submit"
+              className="mt-4 px-4 py-2 bg-bn-blue text-white rounded"
+            >
+              Hantar
+            </button>
+          </form>
+        ) : (
+          <div className="p-4 border rounded-lg flex flex-col items-center justify-center bg-white/90">
+            <h3 className="text-lg font-semibold text-bn-blue">Terima kasih!</h3>
+            <p className="text-gray-700 mt-1">Mesej anda telah dihantar.</p>
+            <button
+              onClick={() => setSubmitted(false)}
+              className="mt-4 px-4 py-2 text-sm bg-bn-blue text-white rounded"
+            >
+              Hantar lagi
+            </button>
+          </div>
+        )}
       </div>
     </section>
   )
