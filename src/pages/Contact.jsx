@@ -2,11 +2,33 @@ import React, { useState } from 'react'
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
 
-  const handleSubmit = (e) => {
-    // Let the browser handle the actual submission to Formspree
-    // but delay the "thank you" message slightly to prevent interrupting submission
-    setTimeout(() => setSubmitted(true), 500)
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setLoading(true)
+    setError(null)
+
+    const formData = new FormData(e.target)
+
+    try {
+      const response = await fetch('https://formspree.io/f/mgvnnwbz', {
+        method: 'POST',
+        body: formData,
+        headers: { Accept: 'application/json' },
+      })
+
+      if (response.ok) {
+        setSubmitted(true)
+      } else {
+        setError('Ralat semasa menghantar mesej. Sila cuba lagi.')
+      }
+    } catch (err) {
+      setError('Ralat sambungan. Sila semak internet anda.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -52,12 +74,7 @@ export default function Contact() {
 
         {/* Formspree Form */}
         {!submitted ? (
-          <form
-            action="https://formspree.io/f/mgvnnwbz"
-            method="POST"
-            onSubmit={handleSubmit}
-            className="p-4 border rounded-lg relative"
-          >
+          <form onSubmit={handleSubmit} className="p-4 border rounded-lg relative">
             <label className="block text-sm">Nama</label>
             <input
               name="nama"
@@ -74,10 +91,13 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="mt-4 px-4 py-2 bg-bn-blue text-white rounded"
+              disabled={loading}
+              className="mt-4 px-4 py-2 bg-bn-blue text-white rounded disabled:opacity-50"
             >
-              Hantar
+              {loading ? 'Menghantar...' : 'Hantar'}
             </button>
+
+            {error && <p className="text-red-600 mt-2 text-sm">{error}</p>}
           </form>
         ) : (
           <div className="p-4 border rounded-lg flex flex-col items-center justify-center bg-white/90">
