@@ -1,75 +1,78 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+import './portfolio.css' // 👈 add a custom CSS file for styling below
 
 export default function Portfolio() {
   const portfolioItems = [
     {
-      title: 'Membangun komuniti setempat',
+      title: '',
       category: 'Kundasang',
       image: 'portfolio-02.jpg',
-      likes: 650,
     },
     {
       title: 'Menghantar bantuan kepada yang memerlukan',
       category: 'Ulu Sugut',
       image: 'portfolio-03.jpg',
-      likes: 650,
     },
     {
       title: 'Membangun ekonomi tempatan',
       category: 'Ranau',
       image: 'portfolio-04.jpg',
-      likes: 650,
     },
     {
       title: 'Meningkatkan infrastruktur kampung',
       category: 'Kg. Timbua',
       image: 'portfolio-05.jpg',
-      likes: 650,
     },
   ]
 
   return (
     <section id="portfolio" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div
-          className="text-center mb-12"
-          data-aos="fade-up"
-          data-aos-duration="500"
-          data-aos-delay="100"
-          data-aos-once="true"
-        >
+        <div className="text-center mb-12">
           <span className="text-bn-blue uppercase text-sm font-semibold tracking-wider">
-            Lihat portfolio dan tinggalkan maklum balas anda
+            Berita / Pengumuman
           </span>
-          <h2 className="text-3xl font-bold text-gray-900 mt-2">Sumbangan</h2>
+          {/* <h2 className="text-3xl font-bold text-gray-900 mt-2">B</h2> */}
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {/* 👇 Swiper Slider */}
+        <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
+          spaceBetween={30}
+          slidesPerView={1} // 👈 always show only 1 slide
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+            dynamicBullets: true, // 👈 smaller, modern dots
+          }}
+          navigation={true} // 👈 enables next/prev arrows
+          speed={800}
+          className="pb-10 max-w-4xl mx-auto" // 👈 centers and limits width
+        >
           {portfolioItems.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
-              data-aos="fade-up"
-              data-aos-duration="500"
-              data-aos-delay={200 + index * 100}
-              data-aos-once="true"
-            >
-              <div className="relative">
+            <SwiperSlide key={index}>
+              <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-transform duration-500">
                 <img
                   src={`${import.meta.env.BASE_URL}${item.image}`}
                   alt={item.title}
-                  className="w-full h-52 object-cover"
+                  className="w-full h-[450px] object-cover" // 👈 bigger image
                 />
-              </div>
-              <div className="p-4">
-                <div className="flex justify-between items-center text-sm text-gray-500">
-                  <span>{item.category}</span>
+                <div className="p-6 text-center">
+                  <span className="text-gray-500 text-sm">{item.category}</span>
+                  <h4 className="mt-3 font-semibold text-xl text-gray-900">{item.title}</h4>
                 </div>
-                <h4 className="mt-2 font-semibold text-gray-900">{item.title}</h4>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   )

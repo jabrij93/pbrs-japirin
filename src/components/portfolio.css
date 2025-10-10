@@ -1,0 +1,36 @@
+/* Pagination Dots */
+.swiper-pagination-bullet {
+    background: #93c5fd !important; /* light blue */
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #0039a6 !important; /* BN dark blue */
+  }
+  
+  /* Navigation Arrows */
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #0039a6 !important;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    transform: scale(1.2);
+    color: #1d4ed8 !important; /* slightly lighter blue */
+  }
+  
+  /* Fade-in effect */
+  .swiper-slide {
+    transition: opacity 0.8s ease-in-out;
+  }
+  
+  /* Center and position dots nicely */
+.swiper-pagination-bullets {
+    bottom: 10px !important;
+  }
+  
