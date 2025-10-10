@@ -12,11 +12,6 @@ export default function Portfolio() {
       title: 'Perasmian PDM Kundasang',
       category: 'Kundasang',
       image: 'poster.jpg',
-    },
-    {
-      title: 'Menghantar bantuan kepada yang memerlukan',
-      category: 'Ulu Sugut',
-      image: 'portfolio-03.jpg',
     }
   ]
 
@@ -61,7 +56,7 @@ export default function Portfolio() {
                     className="w-full h-[450px] object-cover"
                   />
                   <div className="p-6 text-center">
-                    <span className="text-gray-500 text-sm">{item.category}</span>
+                    <span className="text-gray-500 text-l">{item.category}</span>
                     <h4 className="mt-3 font-semibold text-xl text-gray-900">{item.title}</h4>
                   </div>
                 </div>

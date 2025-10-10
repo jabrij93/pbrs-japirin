@@ -9,7 +9,7 @@ export default function Home() {
         <div>
           <h1 className="text-4xl font-extrabold text-gray-900 leading-tight">Japirin Sahadi</h1>
           <p className="mt-4 text-lg text-gray-700">
-            Untuk Kundasang yang lebih baik - Berpengalaman, Komited dan Sedia untuk berkhidmat.
+            Kundasang Maju, Rakyat Sejahtera Suara <br/> Jati Anak Kundasang
           </p>
 
           <div className="mt-6 flex gap-4">
