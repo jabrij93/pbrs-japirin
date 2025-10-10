@@ -9,7 +9,13 @@ export default function About() {
       <div className="mt-6 grid md:grid-cols-2 gap-6">
         <div className="bg-bn-light p-6 rounded-lg">
           <h3 className="font-semibold">Latar Belakang</h3>
-          <p className="mt-2 text-sm text-gray-700">Keluarga, asal usul, hubungan dengan komuniti setempat dan keterlibatan dalam masyarakat.</p>
+          <p className="mt-2 text-sm text-gray-700 text-justify">
+          Beliau lahir dan membesar di Kundasang. Mendapat pendidikan awal di SK Kundasang(1971-1976). Kemudian pendidikan menengah rendah dan tinggi di Penang Free School(1977-1982). 
+          Beliau kemudian menyambung pendidikan diploma dalam akauntan di UiTM Shah Alam(1983-1986). <br/><br/>
+          Beliau mulai menceburi bidang politik sejak tahun 1990-an. Kini beliau menyandang jawatan sebagai Ketua Bahagian Dun Kundasang, Parti Bersatu Rakyat Sabah(PBRS) dan juga merupakan Presiden 'Kundasang Highland Four Wheel Drive Club' (KHFWDC).
+          Beliau mempunyai pengalaman yang luas dalam bidang politik dan pentadbiran kerajaan, khususnya sebagai Setiausaha Politik di pelbagai kementerian peringkat negeri dan persekutuan. 
+          Beliau juga mempunyai kemahiran dalam pengurusan dasar, perhubungan awam, serta strategi pembangunan industri dan luar bandar. Berpegang teguh kepada intergriti,kepimpinan dan keupayaan membuat keputusan yang berkesan bagi memacu pembangunan ekonomi dan sosial.
+          </p>
         </div>
         <div className="bg-bn-light p-6 rounded-lg">
           <h3 className="font-semibold">Pengalaman</h3>
