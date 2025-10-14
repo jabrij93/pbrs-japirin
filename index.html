@@ -18,11 +18,10 @@
       content="Japirin Sahadi, Kundasang, PBRS, BN, PRN17, N36, N36 Kundasang, N.36, N.36 Kundasang, komuniti, pembangunan, Sabah"
     />
     <meta name="author" content="Japirin Sahadi" />
-    <link rel="canonical" href="https://japirinsahadi.com/" />
 
     <title>Japirin Sahadi — N.36 Kundasang</title>
 
-    <!-- ✅ Structured data for Person -->
+    <!-- ✅ Structured Data: Person -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -45,7 +44,10 @@
           "@type": "PostalAddress",
           "addressLocality": "Kundasang",
           "addressRegion": "Sabah",
-          "addressCountry": "Malaysia"
+          "addressCountry": {
+            "@type": "Country",
+            "name": "Malaysia"
+          }
         },
         "knowsAbout": [
           "pembangunan luar bandar",
@@ -61,18 +63,27 @@
       }
     </script>
 
-    <!-- ✅ Add this to connect your website identity -->
+    <!-- ✅ Structured Data: WebSite -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Japirin Sahadi Official Site",
+        "@type": "WebSite",
         "url": "https://japirinsahadi.com",
-        "logo": "https://japirinsahadi.com/japirin_profil.jpeg",
-        "sameAs": [
-          "https://www.facebook.com/profile.php?id=61581827099399",
-          "https://www.tiktok.com/@japirinsahadifanclub?_t=ZS-90XOTkA8i1w&_r=1"
-        ]
+        "name": "Japirin Sahadi — N.36 Kundasang",
+        "description": "Laman rasmi Japirin Sahadi — berkongsi projek komuniti, visi, dan inisiatif di Kundasang.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Japirin Sahadi Official",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://japirinsahadi.com/japirin_profil.jpeg"
+          }
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://japirinsahadi.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       }
     </script>
   </head>
