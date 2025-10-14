@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
@@ -8,6 +9,15 @@ import Vision from './pages/Vision'
 import Contact from './pages/Contact'
 
 export default function App() {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    const redirectPath = new URLSearchParams(window.location.search).get('redirect')
+    if (redirectPath) {
+      navigate(redirectPath, { replace: true })
+    }
+  }, [navigate])
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
