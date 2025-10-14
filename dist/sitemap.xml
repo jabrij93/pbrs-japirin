@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://japirinsahadi.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://japirinsahadi.com/profil</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://japirinsahadi.com/pencapaian</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://japirinsahadi.com/visi</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://japirinsahadi.com/hubungi</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>
