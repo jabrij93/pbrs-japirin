@@ -1,32 +1,69 @@
 <!doctype html>
-<html>
+<html lang="ms">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- ✅ Verification tags -->
     <meta name="google-site-verification" content="google2f90073d53d65fa9.html" />
     <meta name="msvalidate.01" content="9CE603BB29BF28826238946D1F572492" />
-    <meta name="description" content="Official website of Japirin Sahadi — sharing community projects, visions, and initiatives in Kundasang.">
-    <meta name="keywords" content="Japirin Sahadi, Kundasang, PBRS, BN, PRN17, N36, N36 Kundasang, N.36, N.36 Kundasang, community, development, Sabah">
-    <meta name="author" content="Japirin Sahadi">
+
+    <!-- ✅ SEO metadata -->
+    <meta name="description" content="Laman rasmi Japirin Sahadi — berkongsi projek komuniti, visi, dan inisiatif di Kundasang." />
+    <meta name="keywords" content="Japirin Sahadi, Kundasang, PBRS, BN, PRN17, N36, N36 Kundasang, N.36, N.36 Kundasang, komuniti, pembangunan, Sabah" />
+    <meta name="author" content="Japirin Sahadi" />
+
     <title>Japirin Sahadi — N.36 Kundasang</title>
 
-    <!-- ✅ Structured data for SEO -->
+    <!-- ✅ Enhanced structured data for SEO -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Japirin Sahadi",
-        "url": "https://japirinsahadi.com",
-        "description": "Calon pemimpin dari Kundasang bertanding untuk N36 Kundasang yang fokus kepada pembangunan tempatan, remaja, dan pembangunan ekonomi di Sabah."
-      }
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Japirin Sahadi",
+      "alternateName": "Japirin Bin Sahadi",
+      "url": "https://japirinsahadi.com",
+      "image": "https://japirinsahadi.com/japirin_profil.jpeg",
+      "description": "Anak jati Kundasang dan pemimpin masyarakat yang memperjuangkan pembangunan ekonomi, belia, dan kemajuan komuniti di Sabah.",
+      "jobTitle": "Calon N.36 Kundasang",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Parti Bersatu Rakyat Sabah (PBRS)",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Barisan Nasional"
+        }
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kundasang",
+        "addressRegion": "Sabah",
+        "addressCountry": "Malaysia"
+      },
+      "knowsAbout": [
+        "pembangunan luar bandar",
+        "pelancongan komuniti",
+        "ekonomi tempatan",
+        "belia dan pendidikan"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61581827099399",
+        "https://www.tiktok.com/@japirinsahadifanclub?_t=ZS-90XOTkA8i1w&_r=1",
+        "https://japirinsahadi.com"
+      ]
+    }
     </script>
   </head>
+
   <body>
-    <!-- Hidden form so Netlify can detect it at build time -->
-    <!-- <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <!-- Hidden Netlify form (optional) -->
+    <!--
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
       <input type="text" name="nama" />
       <textarea name="mesej"></textarea>
-    </form> -->
+    </form>
+    -->
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
