@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://japirinsahadi.com/sitemap.xml
